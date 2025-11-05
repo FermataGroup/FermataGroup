@@ -121,7 +121,7 @@ const Footer = () => {
               </li>
               <li>
                 <MapPin size={18} />
-                <span>Paraíba</span>
+                <span>Além -Paraíba</span>
               </li>
               <li>
                 <Clock size={18} />

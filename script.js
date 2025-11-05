@@ -665,7 +665,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li><PhoneIcon /> <a href="https://wa.me/5532988596538" target="_blank" rel="noopener noreferrer">(32) 98859-6538</a></li>
               <li><MailIcon /> <a href="mailto:fermata34620835@outlook.com">fermata34620835@outlook.com</a></li>
-              <li><MapPinIcon /> <span>Paraíba</span></li>
+              <li><MapPinIcon /> <span>Além - Paraíba</span></li>
               <li><ClockIcon /> <span>Seg - Sáb: 08:00 - 18:00</span></li>
             </ul>
           </div>
