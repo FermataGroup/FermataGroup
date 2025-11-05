@@ -52,7 +52,7 @@ const Navbar = ({ scrolled }) => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <img
-            src="./imagens/tr7ulbz6_49f90b3d-3fd6-41df-841b-12e58de7d2cf-removebg-preview.png"
+            src="./imagens/fefe.png"
             alt="Fermata Logo"
             className="logo-img"
           />
@@ -318,7 +318,7 @@ const BudgetSimulator = () => {
       `*Endereço:* ${formData.endereco}%0A` +
       `*Tipo de Imóvel:* ${formData.tipoImovel}%0A` +
       `*Detalhes:* ${formData.detalhes || 'Não informado'}`;
-    const whatsappUrl = `https://wa.me/5532988335942?text=${message}`;
+    const whatsappUrl = `https://wa.me/5532988596538?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -451,7 +451,7 @@ const Scheduling = () => {
       `*Horário Preferencial:* ${formData.horario}%0A` +
       `*Endereço:* ${formData.endereco}%0A` +
       `*Observações:* ${formData.observacoes || 'Nenhuma'}`;
-    const whatsappUrl = `https://wa.me/5532988335942?text=${message}`;
+    const whatsappUrl = `https://wa.me/5532988596538?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
   return (
@@ -656,7 +656,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contato</h4>
             <ul className="footer-contact">
-              <li><PhoneIcon /> <a href="https://wa.me/5532988335942" target="_blank" rel="noopener noreferrer">(32) 98833-5942</a></li>
+              <li><PhoneIcon /> <a href="https://wa.me/5532988596538" target="_blank" rel="noopener noreferrer">(32) 98859-6538</a></li>
               <li><MailIcon /> <a href="mailto:contato@fermata.com.br">contato@fermata.com.br</a></li>
               <li><MapPinIcon /> <span>Juiz de Fora - MG</span></li>
               <li><ClockIcon /> <span>Seg - Sáb: 08:00 - 18:00</span></li>
