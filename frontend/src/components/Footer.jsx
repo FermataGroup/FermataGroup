@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Snowflake, Zap, Wrench, Wind, ShieldCheck, Sun, Calendar, Home, Info, Briefcase, DollarSign, Image } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -34,23 +34,73 @@ const Footer = () => {
 
           <div className="footer-section">
             <h4>Navegação</h4>
-            <ul className="footer-links">
-              <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }}>Início</a></li>
-              <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('#about'); }}>Sobre</a></li>
-              <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>Serviços</a></li>
-              <li><a href="#budget" onClick={(e) => { e.preventDefault(); scrollToSection('#budget'); }}>Orçamento</a></li>
-              <li><a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('#portfolio'); }}>Portfólio</a></li>
+            <ul className="footer-links footer-nav-list">
+              <li>
+                <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }}>
+                  <Home size={20} />
+                  <span>Início</span>
+                </a>
+              </li>
+              <li>
+                <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('#about'); }}>
+                  <Info size={20} />
+                  <span>Sobre</span>
+                </a>
+              </li>
+              <li>
+                <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>
+                  <Briefcase size={20} />
+                  <span>Serviços</span>
+                </a>
+              </li>
+              <li>
+                <a href="#budget" onClick={(e) => { e.preventDefault(); scrollToSection('#budget'); }}>
+                  <DollarSign size={20} />
+                  <span>Orçamento</span>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('#portfolio'); }}>
+                  <Image size={20} />
+                  <span>Portfólio</span>
+                </a>
+              </li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4>Serviços</h4>
-            <ul className="footer-links">
-              <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>Climatização</a></li>
-              <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>Segurança Eletrônica</a></li>
-              <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>Energia Solar</a></li>
-              <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>Projetos Elétricos</a></li>
-              <li><a href="#scheduling" onClick={(e) => { e.preventDefault(); scrollToSection('#scheduling'); }}>Agendamento</a></li>
+            <ul className="footer-links footer-services-list">
+              <li>
+                <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>
+                  <Wind size={20} />
+                  <span>Climatização</span>
+                </a>
+              </li>
+              <li>
+                <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>
+                  <ShieldCheck size={20} />
+                  <span>Segurança Eletrônica</span>
+                </a>
+              </li>
+              <li>
+                <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>
+                  <Sun size={20} />
+                  <span>Energia Solar</span>
+                </a>
+              </li>
+              <li>
+                <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('#services'); }}>
+                  <Zap size={20} />
+                  <span>Projetos Elétricos</span>
+                </a>
+              </li>
+              <li>
+                <a href="#scheduling" onClick={(e) => { e.preventDefault(); scrollToSection('#scheduling'); }}>
+                  <Calendar size={20} />
+                  <span>Agendamento</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -65,13 +115,13 @@ const Footer = () => {
               </li>
               <li>
                 <Mail size={18} />
-                <a href="mailto:contato@fermata.com.br">
-                  contato@fermata.com.br
+                <a href="mailto:fermata34620835@outlook.com">
+                  fermata34620835@outlook.com
                 </a>
               </li>
               <li>
                 <MapPin size={18} />
-                <span>Juiz de Fora - MG</span>
+                <span>Paraíba</span>
               </li>
               <li>
                 <Clock size={18} />
@@ -85,18 +135,18 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <div className="footer-social">
-            <a href="#" className="social-link" aria-label="Facebook">
-              <Facebook size={20} />
-            </a>
-            <a href="#" className="social-link" aria-label="Instagram">
-              <Instagram size={20} />
-            </a>
-            <a href="#" className="social-link" aria-label="LinkedIn">
-              <Linkedin size={20} />
-            </a>
+            <div className="social-link">
+              <Snowflake size={20} />
+            </div>
+            <div className="social-link">
+              <Zap size={20} />
+            </div>
+            <div className="social-link">
+              <Wrench size={20} />
+            </div>
           </div>
           <p className="footer-copyright">
-            © {currentYear} Fermata Segurança e Climatização. Todos os direitos reservados.
+            {currentYear} Fermata Segurança e Climatização. Todos os direitos reservados.
           </p>
         </div>
       </div>

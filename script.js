@@ -13,6 +13,7 @@ const UsersIcon = () => <Icon>👥</Icon>;
 const ZapIcon = () => <Icon>⚡</Icon>;
 const WindIcon = () => <Icon>❄️</Icon>;
 const SunIcon = () => <Icon>☀️</Icon>;
+const DropletIcon = () => <Icon>💧</Icon>;
 const ExternalLinkIcon = () => <Icon>↗</Icon>;
 const SendIcon = () => <Icon>📨</Icon>;
 const CalendarIcon = () => <Icon>📅</Icon>;
@@ -27,6 +28,11 @@ const LinkedinIcon = () => <Icon>in</Icon>;
 const PlusIcon = () => <Icon>+</Icon>;
 const ChevronUpIcon = () => <Icon>↑</Icon>;
 const HelpCircleIcon = () => <Icon>?</Icon>;
+const HomeIcon = () => <Icon>🏠</Icon>;
+const InfoIcon = () => <Icon>ℹ️</Icon>;
+const BriefcaseIcon = () => <Icon>💼</Icon>;
+const DollarIcon = () => <Icon>💰</Icon>;
+const ImageIcon = () => <Icon>🖼️</Icon>;
 
 const Navbar = ({ scrolled }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -244,7 +250,7 @@ const Services = () => {
   const scrollToSection = (sectionId) => { const element = document.querySelector(sectionId); if (element) element.scrollIntoView({ behavior: 'smooth' }); };
   
   const services = [
-    { icon: <WindIcon />, title: 'Climatização', description: 'Instalação, higienização e manutenção de sistemas de ar condicionado residencial e comercial', features: ['Instalação Profissional', 'Higienização Técnica', 'Manutenção Preventiva', 'Assistência 24h'] },
+    { icon: <WindIcon />, title: 'Climatização', description: 'Instalação, higienização e manutenção de sistemas de ar condicionado residencial e comercial', features: ['Instalação Profissional', 'Higienização Técnica', 'Manutenção Preventiva', 'Atendimento rápido'] },
     { icon: <ShieldIcon />, title: 'Segurança Eletrônica', description: 'Sistemas de segurança de alto padrão com tecnologia de ponta para residências e empresas', features: ['Câmeras IP 4K', 'Alarmes Inteligentes', 'Controle de Acesso', 'Monitoramento Remoto'] },
     { icon: <SunIcon />, title: 'Energia Solar', description: 'Projetos completos de energia solar fotovoltaica com economia e sustentabilidade', features: ['Projeto Personalizado', 'Instalação Completa', 'Homologação', 'Monitoramento Online'] },
     { icon: <ZapIcon />, title: 'Projetos Elétricos', description: 'Projetos elétricos personalizados com engenheiro eletricista próprio', features: ['Projetos Residenciais', 'Projetos Comerciais', 'Laudos Técnicos', 'Adequação à NR-10'] },
@@ -298,6 +304,7 @@ const BudgetSimulator = () => {
     { id: 'climatizacao', name: 'Climatização', icon: <WindIcon /> },
     { id: 'seguranca', name: 'Segurança Eletrônica', icon: <ShieldIcon /> },
     { id: 'energia-solar', name: 'Energia Solar', icon: <SunIcon /> },
+    { id: 'aquecimento-solar', name: 'Aquecimento Solar (Boiler)', icon: <DropletIcon /> },
     { id: 'projetos-eletricos', name: 'Projetos Elétricos', icon: <ZapIcon /> },
   ];
 
@@ -635,30 +642,30 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h4>Navegação</h4>
-            <ul className="footer-links">
-              <li><a href="#home" onClick={(e)=>{e.preventDefault(); scrollToSection('#home');}}>Início</a></li>
-              <li><a href="#about" onClick={(e)=>{e.preventDefault(); scrollToSection('#about');}}>Sobre</a></li>
-              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}>Serviços</a></li>
-              <li><a href="#budget" onClick={(e)=>{e.preventDefault(); scrollToSection('#budget');}}>Orçamento</a></li>
-              <li><a href="#portfolio" onClick={(e)=>{e.preventDefault(); scrollToSection('#portfolio');}}>Portfólio</a></li>
+            <ul className="footer-links footer-nav-list">
+              <li><a href="#home" onClick={(e)=>{e.preventDefault(); scrollToSection('#home');}}><HomeIcon /> <span>Início</span></a></li>
+              <li><a href="#about" onClick={(e)=>{e.preventDefault(); scrollToSection('#about');}}><InfoIcon /> <span>Sobre</span></a></li>
+              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}><BriefcaseIcon /> <span>Serviços</span></a></li>
+              <li><a href="#budget" onClick={(e)=>{e.preventDefault(); scrollToSection('#budget');}}><DollarIcon /> <span>Orçamento</span></a></li>
+              <li><a href="#portfolio" onClick={(e)=>{e.preventDefault(); scrollToSection('#portfolio');}}><ImageIcon /> <span>Portfólio</span></a></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Serviços</h4>
-            <ul className="footer-links">
-              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}>Climatização</a></li>
-              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}>Segurança Eletrônica</a></li>
-              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}>Energia Solar</a></li>
-              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}>Projetos Elétricos</a></li>
-              <li><a href="#scheduling" onClick={(e)=>{e.preventDefault(); scrollToSection('#scheduling');}}>Agendamento</a></li>
+            <ul className="footer-links footer-services-list">
+              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}><WindIcon /> <span>Climatização</span></a></li>
+              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}><ShieldIcon /> <span>Segurança Eletrônica</span></a></li>
+              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}><SunIcon /> <span>Energia Solar</span></a></li>
+              <li><a href="#services" onClick={(e)=>{e.preventDefault(); scrollToSection('#services');}}><ZapIcon /> <span>Projetos Elétricos</span></a></li>
+              <li><a href="#scheduling" onClick={(e)=>{e.preventDefault(); scrollToSection('#scheduling');}}><CalendarIcon /> <span>Agendamento</span></a></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Contato</h4>
             <ul className="footer-contact">
               <li><PhoneIcon /> <a href="https://wa.me/5532988596538" target="_blank" rel="noopener noreferrer">(32) 98859-6538</a></li>
-              <li><MailIcon /> <a href="mailto:contato@fermata.com.br">contato@fermata.com.br</a></li>
-              <li><MapPinIcon /> <span>Juiz de Fora - MG</span></li>
+              <li><MailIcon /> <a href="mailto:fermata34620835@outlook.com">fermata34620835@outlook.com</a></li>
+              <li><MapPinIcon /> <span>Paraíba</span></li>
               <li><ClockIcon /> <span>Seg - Sáb: 08:00 - 18:00</span></li>
             </ul>
           </div>

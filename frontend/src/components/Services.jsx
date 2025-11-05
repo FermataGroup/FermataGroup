@@ -1,29 +1,29 @@
 import React from 'react';
-import { Wind, ShieldCheck, Sun, Zap } from 'lucide-react';
+import { Wind, ShieldCheck, Sun, Zap, Droplet } from 'lucide-react';
 import './Services.css';
 
 const Services = () => {
   const services = [
     {
-      icon: <Wind size={40} />,
+      icon: Wind,
       title: 'Climatização',
       description: 'Instalação, higienização e manutenção de sistemas de ar condicionado residencial e comercial',
       features: ['Instalação Profissional', 'Higienização Técnica', 'Manutenção Preventiva', 'Assistência 24h']
     },
     {
-      icon: <ShieldCheck size={40} />,
+      icon: ShieldCheck,
       title: 'Segurança Eletrônica',
       description: 'Sistemas de segurança de alto padrão com tecnologia de ponta para residências e empresas',
       features: ['Câmeras IP 4K', 'Alarmes Inteligentes', 'Controle de Acesso', 'Monitoramento Remoto']
     },
     {
-      icon: <Sun size={40} />,
+      icon: Sun,
       title: 'Energia Solar',
       description: 'Projetos completos de energia solar fotovoltaica com economia e sustentabilidade',
       features: ['Projeto Personalizado', 'Instalação Completa', 'Homologação', 'Monitoramento Online']
     },
     {
-      icon: <Zap size={40} />,
+      icon: Zap,
       title: 'Projetos Elétricos',
       description: 'Projetos elétricos personalizados com engenheiro eletricista próprio',
       features: ['Projetos Residenciais', 'Projetos Comerciais', 'Laudos Técnicos', 'Adequação à NR-10']
@@ -50,7 +50,7 @@ const Services = () => {
             >
               <div className="service-icon-wrapper">
                 <div className="service-icon">
-                  {service.icon}
+                  <service.icon />
                 </div>
               </div>
               

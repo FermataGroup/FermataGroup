@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Wind, ShieldCheck, Sun, Zap, ArrowRight, ArrowLeft, Send } from 'lucide-react';
+import { Wind, ShieldCheck, Sun, Zap, Droplet, ArrowRight, ArrowLeft, Send } from 'lucide-react';
 import './BudgetSimulator.css';
 
 const BudgetSimulator = () => {
@@ -18,7 +18,8 @@ const BudgetSimulator = () => {
     { id: 'climatizacao', name: 'Climatização', icon: <Wind size={32} /> },
     { id: 'seguranca', name: 'Segurança Eletrônica', icon: <ShieldCheck size={32} /> },
     { id: 'energia-solar', name: 'Energia Solar', icon: <Sun size={32} /> },
-    { id: 'projetos-eletricos', name: 'Projetos Elétricos', icon: <Zap size={32} /> }
+    { id: 'projetos-eletricos', name: 'Projetos Elétricos', icon: <Zap size={32} /> },
+    { id: 'aquecimento-solar', name: 'Aquecimento Solar (Boiler)', icon: <Droplet size={32} /> }
   ];
 
   const handleServiceSelect = (serviceId) => {

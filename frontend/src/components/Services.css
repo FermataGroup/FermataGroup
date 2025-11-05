@@ -145,4 +145,45 @@
   .services-grid {
     grid-template-columns: 1fr;
   }
+
+  .service-card {
+    padding: 1.5rem !important;
+  }
+
+  .service-icon-wrapper {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .service-icon {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 10px !important;
+  }
+
+  .service-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .service-title {
+    font-size: 1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .service-description {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .service-features li {
+    gap: 0.4rem !important;
+    padding: 0.3rem 0 !important;
+    font-size: 0.8rem !important;
+  }
+
+  .feature-dot {
+    width: 4px !important;
+    height: 4px !important;
+  }
 }

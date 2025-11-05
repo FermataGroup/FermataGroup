@@ -119,9 +119,15 @@
 
 .services-selection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin-bottom: 2rem;
+  max-width: 100%;
+  justify-items: center;
+}
+
+.services-selection .service-btn:nth-child(5) {
+  grid-column: 2 / 4;
 }
 
 .service-btn {
@@ -139,6 +145,8 @@
   font-size: 1rem;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
+  width: 100%;
+  min-height: 140px;
 }
 
 .service-btn:hover {
@@ -303,6 +311,17 @@
 
   .services-selection {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-btn {
+    width: 100%;
+    min-height: 120px;
+    padding: 1.5rem 1rem;
+  }
+
+  .services-selection .service-btn:nth-child(5) {
+    grid-column: auto;
   }
 
   .step-line {
