@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <img 
-                src="https://customer-assets.emergentagent.com/job_fermata-solutions/artifacts/tr7ulbz6_49f90b3d-3fd6-41df-841b-12e58de7d2cf.jpg" 
+                src="" 
                 alt="Fermata Logo" 
               />
             </div>
